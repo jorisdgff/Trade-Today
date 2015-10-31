@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="CommonPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>nl.m4jit.tradetoday.dataaccess.transactions.transaction.TransactionArch</class>
+    <class>nl.m4jit.tradetoday.dataaccess.transactions.transactionrule.TransactionruleArch</class>
+    <class>nl.m4jit.tradetoday.dataaccess.users.UseraccountGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.members.ParticipationLevelGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.members.RefferingInstanceGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.members.MemberGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.members.HeardOfTypeGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.members.IncomeTypeGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.transactions.TransactionGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.transactions.TransactionruleGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.custom.PropertyGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.loanservice.LettingGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.loanservice.LettingruleGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.loanservice.LoanItemGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.loanservice.LoanItemTypeGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.nhcjobs.NHCJobGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.nhcjobs.NHCJobTypeGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.bulletinboard.BulletinGateway</class>
+    <class>nl.m4jit.tradetoday.dataaccess.transactions.TransactionGatewayArch</class>
+    <class>nl.m4jit.tradetoday.dataaccess.transactions.TransactionruleGatewayArch</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value=""/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
